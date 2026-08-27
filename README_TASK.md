@@ -214,8 +214,6 @@ For Windows PowerShell:
 Copy-Item .env.example .env
 ```
 
-![](screenshots/cp.png)
-
 Configure `.env`:
 
 ```env
