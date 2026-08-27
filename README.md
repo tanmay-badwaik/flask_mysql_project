@@ -47,6 +47,10 @@ VALUES (
 )
 ON DUPLICATE KEY UPDATE `username`=`username`;
 ```
+![](screenshots/mysql21.png)
+![](screenshots/mysql22.png)
+![](screenshots/mysql23.png)
+
 
 ### Or Import the `schema.sql` file directly:
 ```bash
@@ -61,7 +65,9 @@ mysql -u root -p < schema.sql
 ```bash
 git clone <repository_url>
 cd flask_with_mysql
+
 ```
+![](screenshots/git.png)
 
 ### 2. Create and Activate Virtual Environment
 ```bash
@@ -73,11 +79,13 @@ venv\Scripts\activate
 python3 -m venv venv
 source venv/bin/activate
 ```
+![](screenshots/venv1.png)
 
 ### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
+![](screenshots/venv2.png)
 
 ### 4. Configure Environment Variables (`.env`)
 Copy `.env.example` to `.env` and fill in your MySQL credentials:
@@ -88,6 +96,8 @@ Copy-Item .env.example .env
 # Linux / MacOS
 cp .env.example .env
 ```
+![](screenshots/cp.png)
+
 
 Open `.env` and set your configuration:
 ```env
@@ -101,10 +111,13 @@ SECRET_KEY=super_secret_cloud_test_key
 PORT=5000
 ```
 
+![](screenshots/envcat.png)
+
 ### 5. Run the Application
 ```bash
 python app.py
 ```
+![](screenshots/start.png)
 
 Open your browser and visit: `http://localhost:5000` (or `http://<your-cloud-instance-ip>:5000`)
 
@@ -143,3 +156,7 @@ flask_with_mysql/
     └── css/
         └── style.css       # Glassmorphism dark mode design system
 ```
+
+
+
+
